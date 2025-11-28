@@ -1,0 +1,418 @@
+[
+  {
+    "nome": "HTTRANS",
+    "introdução": "Kit de ferramentas de tradução.",
+    "descrição": "Um kit simples de ferramentas práticas criado por um tradutor apaixonado por pandas, desenhado para fazer seus dias de trabalho mais fáceis. Completamente gratuito, não requer instalação e funciona bem no seu navegador.",
+    "link": "https://httrans.org/",
+    "tags": ["Kit de Ferramentas"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Cronopista",
+    "introdução": "Dicionário de rimas.",
+    "descrição": "Um site com a possibilidade de buscar rimas para manter a tradução com o mesmo estilo que o texto original.",
+    "link": "https://www.cronopista.com/",
+    "tags": ["Dicionário", "Referência"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "DeepL",
+    "introdução": "Um serviço de tradução automática que utiliza inteligência artificial e redes neurais para produzir traduções mais naturais e precisas.",
+    "descrição": "Desenvolvido por uma empresa alemã, o DeepL tem ganhado popularidade por sua alta precisão e pela capacidade de gerar traduções que soam menos robotizadas. Ele é capaz de traduzir textos e também arquivos em formatos como .pdf, .docx e .pptx. **Observação:** Como um motor de tradução automática, ele é excelente para traduções rápidas, mas não possui as ferramentas de gestão de projetos, memória e consistência de uma ferramenta CAT.",
+    "link": "https://www.deepl.com/translator",
+    "tags": ["Tradução Automática", "IA"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "Smartcat",
+    "introdução": "Uma plataforma de tradução assistida por computador (CAT) baseada em nuvem, que é gratuita e fácil de usar.",
+    "descrição": "O Smartcat permite traduzir diversos tipos de arquivos e integra-se a outras ferramentas. Ele oferece recursos como memórias de tradução, verificações de qualidade automatizadas e a possibilidade de vários tradutores trabalharem simultaneamente em um projeto. Embora a plataforma seja gratuita, recursos adicionais como tradução automática e reconhecimento óptico de caracteres (OCR) são pagos. **Observação:** Como uma ferramenta CAT, o Smartcat funciona como uma 'oficina' para o tradutor, focada em aumentar a produtividade e consistência humana com memórias e glossários, diferente de um tradutor automático puro.",
+    "link": "https://www.smartcat.com",
+    "tags": ["CAT", "Plataforma"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "Reverso",
+    "introdução": "Uma plataforma de tradução completa que oferece diversos recursos linguísticos.",
+    "descrição": "Além de traduzir textos, o Reverso permite verificar o uso de termos em diferentes contextos, o que auxilia na compreensão. A ferramenta também oferece dicionário de sinônimos, conjugador de verbos e está disponível como aplicativo para smartphones e extensão para navegadores. O aplicativo móvel oferece dicionários e listas de vocabulário que funcionam offline.",
+    "link": "https://www.reverso.net/",
+    "tags": ["Dicionário", "Tradução Automática", "Referência", "Offline"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "Matecat",
+    "introdução": "Uma ferramenta de tradução assistida por computador (CAT) gratuita e de nível corporativo.",
+    "descrição": "O Matecat suporta mais de 200 idiomas e 80 formatos de arquivo. Ele utiliza uma memória de tradução pública com mais de 12 bilhões de palavras e seleciona automaticamente o melhor motor de tradução automática para o par de idiomas do projeto. **Observação:** Sendo uma ferramenta CAT, o Matecat é um ambiente de trabalho completo que auxilia o tradutor com memórias de tradução e gestão de projetos, otimizando o trabalho humano em vez de apenas automatizá-lo.",
+    "link": "https://www.matecat.com/",
+    "tags": ["CAT", "Plataforma"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Microsoft Translator",
+    "introdução": "Um serviço de tradução completo da Microsoft que traduz texto, voz e imagens.",
+    "descrição": "Oferece serviços especializados para uso pessoal, profissional e educacional. Seu aplicativo móvel permite o download de pacotes de idiomas para tradução de texto e imagem sem a necessidade de conexão com a internet.",
+    "link": "https://www.microsoft.com/translator/",
+    "tags": ["Tradução Automática", "IA", "Offline"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "Amara",
+    "introdução": "Plataforma colaborativa para legendar e traduzir vídeos.",
+    "descrição": "Amara utiliza o poder do crowdsourcing (colaboração em massa) para tornar vídeos acessíveis a um público global. Voluntários podem contribuir com legendas e traduções, tornando-a uma ferramenta poderosa para quebrar barreiras linguísticas. É usada por organizações como TED, Khan Academy e Twitter.",
+    "link": "https://amara.org/",
+    "tags": ["Legendas", "Plataforma"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Treccani",
+    "introdução": "Material em Italiano",
+    "descrição": "O 'Vocabolario Treccani' é um dos mais prestigiados dicionários da língua italiana, conhecido por sua abrangência e rigor. Além das definições, oferece etimologia, exemplos de uso e informações enciclopédicas, sendo uma referência fundamental para tradutores e acadêmicos.",
+    "link": "https://www.treccani.it/",
+    "tags": ["Dicionário", "Italiano"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Linguee",
+    "introdução": "Buscador de traduções e dicionário online.",
+    "descrição": "Diferente de um tradutor automático, o Linguee funciona como um motor de busca que encontra frases e textos bilíngues de fontes confiáveis na internet. Isso permite ao usuário ver como uma palavra ou expressão é traduzida em diferentes contextos, tornando-o uma ferramenta poderosa para encontrar a tradução mais adequada. Também oferece um aplicativo com dicionários que podem ser baixados para uso offline.",
+    "link": "https://www.linguee.pt/",
+    "tags": ["Dicionário", "Referência", "Offline"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "IATE (Interactive Terminology for Europe)",
+    "introdução": "Base de dados terminológica da União Europeia.",
+    "descrição": "IATE é um recurso indispensável para quem traduz textos técnicos, jurídicos ou oficiais. Contém milhões de termos em todas as línguas oficiais da UE, garantindo consistência e precisão na terminologia utilizada em documentos institucionais. É uma ferramenta colaborativa entre as diversas instituições da União Europeia.",
+    "link": "https://iate.europa.eu/",
+    "tags": ["Terminologia", "Base de Dados"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Xbench",
+    "introdução": "Ferramenta de garantia de qualidade (QA) e gestão de terminologia.",
+    "descrição": "O Xbench é utilizado para verificar a consistência e a qualidade de traduções. Ele permite carregar glossários, memórias de tradução e os próprios arquivos traduzidos para realizar verificações automáticas, identificando erros como inconsistências, problemas com números, tags e o uso incorreto de terminologia. É uma etapa crucial para garantir um trabalho final impecável.",
+    "link": "https://www.xbench.net/",
+    "tags": ["QA", "Terminologia"],
+    "preco": "Pago"
+  }
+,
+  {
+    "nome": "Google Translate",
+    "introdução": "O serviço de tradução automática do Google, um dos mais conhecidos e utilizados no mundo.",
+    "descrição": "Utilizando a tecnologia de Tradução Automática Neural (NMT), o Google Translate suporta centenas de idiomas e oferece tradução de texto, voz, imagens e páginas web. Sua integração com todo o ecossistema Google e a vasta quantidade de dados o tornam uma ferramenta versátil para traduções rápidas.",
+    "link": "https://translate.google.com/",
+    "tags": ["Tradução Automática", "IA"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "ChatGPT (Modelos GPT)",
+    "introdução": "Um modelo de linguagem de grande escala (LLM) que pode ser usado para tarefas de tradução complexas.",
+    "descrição": "Embora não seja uma ferramenta de tradução dedicada, modelos como o ChatGPT da OpenAI são excelentes para traduzir com nuances, adaptar o estilo e o tom de um texto, ou até mesmo explicar as escolhas de tradução. É ideal para contextos que exigem mais criatividade e compreensão do que uma tradução literal.",
+    "link": "https://chat.openai.com/",
+    "tags": ["IA", "Referência"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "ModernMT",
+    "introdução": "Uma ferramenta de tradução automática adaptativa que aprende com as suas correções.",
+    "descrição": "A ModernMT se destaca por sua capacidade de se adaptar em tempo real. À medida que um tradutor edita os resultados, a IA aprende com as correções e aplica esse conhecimento instantaneamente nas próximas frases, aumentando a consistência e a qualidade do trabalho.",
+    "link": "https://www.modernmt.com/",
+    "tags": ["Tradução Automática", "IA"],
+    "preco": "Pago"
+  },
+  {"nome": "1000 imágenes en la punta de la lengua",
+    "introdução": "Repertório de expressões idiomáticas em espanhol, francês e inglês.",
+    "descrição": "Este site apresenta um vasto repertório de expressões idiomáticas em francês, inglês e espanhol. Cada expressão possui uma ficha com um contexto para indicar seu sentido, além de um áudio para ouvir a pronúncia. Também é possível buscar a equivalência da expressão nos outros dois idiomas.",
+    "link": "https://expressions.ccdmd.qc.ca/repertorio-de-expresiones/",
+    "tags": ["Referência", "Idiomas"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Crowdin",
+    "introdução": "Plataforma de gerenciamento de localização e tradução baseada em nuvem.",
+    "descrição": "O Crowdin é ideal para projetos de software, jogos, aplicativos móveis e websites. Ele automatiza o processo de tradução, permitindo que equipes colaborem em tempo real, integrem-se com repositórios de código (como GitHub) e usem recursos como memória de tradução, glossários e tradução automática.",
+    "link": "https://crowdin.com/",
+    "tags": ["Plataforma", "Localização"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "LanguageTool",
+    "introdução": "Verificador de estilo e gramática multilíngue.",
+    "descrição": "Uma ferramenta de revisão de texto que vai além da verificação ortográfica. O LanguageTool ajuda a encontrar erros gramaticais, de pontuação e de estilo em mais de 25 idiomas. É um excelente assistente para garantir a qualidade final do texto traduzido, podendo ser usado como extensão de navegador ou editor de texto.",
+    "link": "https://languagetool.org/",
+    "tags": ["QA", "Gramática"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "TERMIUM Plus",
+    "introdução": "O banco de dados terminológicos e linguísticos do Governo do Canadá.",
+    "descrição": "Uma fonte de consulta essencial, especialmente para traduções nos pares inglês-francês, mas com milhões de termos em espanhol e português também. O TERMIUM Plus oferece traduções de termos técnicos, abreviações e nomes oficiais, sendo uma referência confiável para garantir a precisão terminológica.",
+    "link": "https://www.btb.termiumplus.gc.ca/",
+    "tags": ["Terminologia", "Base de Dados", "Referência"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Pleco",
+    "introdução": "Dicionário de chinês e ferramenta de aprendizado para dispositivos móveis.",
+    "descrição": "Considerado o melhor dicionário de chinês para smartphones (iOS/Android), o Pleco é uma ferramenta indispensável para quem trabalha com o idioma. Oferece reconhecimento óptico de caracteres (OCR) pela câmera, reconhecimento de escrita, áudio de pronúncia e um sistema robusto de flashcards.",
+    "link": "https://www.pleco.com/",
+    "tags": ["Dicionário", "Chinês", "Offline"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "Baidu Translate (百度翻译)",
+    "introdução": "O serviço de tradução automática da Baidu, o gigante da tecnologia chinesa.",
+    "descrição": "Sendo o principal motor de busca da China, o Baidu Translate possui uma vasta base de dados focada no idioma chinês. Muitas vezes, oferece traduções mais naturais e contextualmente precisas para o chinês do que outras ferramentas globais, sendo uma alternativa poderosa ao Google Translate e DeepL.",
+    "link": "https://fanyi.baidu.com/",
+    "tags": ["Tradução Automática", "Chinês", "IA"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "Youdao Dictionary (有道词典)",
+    "introdução": "Dicionário e plataforma de tradução da empresa chinesa NetEase.",
+    "descrição": "Uma das ferramentas de tradução mais populares na China, o Youdao oferece um dicionário completo, tradução de documentos e de textos. É conhecido por incluir uma grande quantidade de frases de exemplo e por sua interface amigável, disponível tanto na web quanto em aplicativos para desktop e celular.",
+    "link": "https://www.youdao.com/",
+    "tags": ["Dicionário", "Tradução Automática", "Chinês"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "Naver Papago (파파고)",
+    "introdução": "O motor de tradução automática da Naver, a maior empresa de tecnologia da Coreia do Sul.",
+    "descrição": "Considerado por muitos como o melhor tradutor automático para o idioma coreano, superando concorrentes globais em naturalidade e precisão contextual. O nome 'Papago' é uma palavra em esperanto para 'papagaio', refletindo sua habilidade linguística. É a ferramenta ideal para traduções rápidas e confiáveis envolvendo o coreano.",
+    "link": "https://papago.naver.com/",
+    "tags": ["Tradução Automática", "Coreano", "Japonês", "IA"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "Naver Dictionary (네이버 사전)",
+    "introdução": "O dicionário online mais completo e utilizado para o idioma coreano.",
+    "descrição": "Uma ferramenta indispensável que vai muito além de simples traduções. Oferece definições detalhadas, inúmeras frases de exemplo, informações sobre hanja (caracteres chineses), etimologia e um vasto banco de dados de expressões idiomáticas. É a principal fonte de consulta para estudantes e tradutores profissionais de coreano.",
+    "link": "https://dict.naver.com/",
+    "tags": ["Dicionário", "Coreano", "Referência"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Kakao i Translation (카카오 i 번역)",
+    "introdução": "Serviço de tradução da Kakao, empresa por trás do popular aplicativo de mensagens KakaoTalk.",
+    "descrição": "Principal concorrente do Papago na Coreia do Sul, o tradutor da Kakao também utiliza tecnologia de tradução neural para fornecer resultados de alta qualidade. Integrado ao ecossistema Kakao, é uma alternativa robusta para quem busca diferentes opções de tradução automática para o coreano.",
+    "link": "https://translate.kakao.com/",
+    "tags": ["Tradução Automática", "Coreano", "IA"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "Le Grand Robert & Collins",
+    "introdução": "Dicionário bilíngue francês-inglês de referência para tradutores profissionais.",
+    "descrição": "Considerado um dos dicionários bilíngues mais completos e confiáveis, o Robert & Collins é uma ferramenta essencial para traduções de alta qualidade entre o francês e o inglês. Oferece nuances, exemplos de uso e terminologia precisa.",
+    "link": "https://dictionnaire.lerobert.com/collins.html",
+    "tags": ["Dicionário", "Francês", "Referência"],
+    "preco": "Pago"
+  },
+  {
+    "nome": "Larousse Dictionnaire Français",
+    "introdução": "O dicionário de referência da língua francesa.",
+    "descrição": "O Larousse é um dos dicionários mais famosos e respeitados para o idioma francês. Além de definições, oferece sinônimos, enciclopédia, conjugador de verbos e citações. É uma ferramenta fundamental para qualquer pessoa que trabalhe com o francês.",
+    "link": "https://www.larousse.fr/dictionnaires/francais",
+    "tags": ["Dicionário", "Francês", "Referência"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Cordial",
+    "introdução": "Corretor ortográfico e gramatical avançado para a língua francesa.",
+    "descrição": "O Cordial é um poderoso corretor que vai além da simples verificação ortográfica, analisando a gramática, o estilo e a tipografia do texto em francês. É uma ferramenta de garantia de qualidade (QA) indispensável para revisar e finalizar traduções, garantindo um texto impecável.",
+    "link": "https://www.cordial.fr/",
+    "tags": ["QA", "Gramática", "Francês"],
+    "preco": "Pago"
+  },
+  {
+    "nome": "Perseus Digital Library",
+    "introdução": "Uma biblioteca digital de referência para estudos clássicos da Universidade Tufts.",
+    "descrição": "Uma das mais importantes ferramentas acadêmicas para o estudo de línguas clássicas. O Perseus Project oferece acesso a dicionários de latim de alta qualidade (como o Lewis & Short), ferramentas de análise morfológica que detalham a gramática de cada palavra, e um vasto acervo de textos originais.",
+    "link": "http://www.perseus.tufts.edu/hopper/",
+    "tags": ["Dicionário", "Latim", "Referência", "Acadêmico"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Logeion",
+    "introdução": "Dicionário online que agrega múltiplas fontes para línguas clássicas.",
+    "descrição": "Desenvolvido pela Universidade de Chicago, o Logeion permite consultar simultaneamente vários dos mais importantes dicionários de latim e grego. Ele fornece definições ricas, frequência de uso das palavras e exemplos extraídos de textos clássicos, sendo uma ferramenta poderosa para pesquisa terminológica.",
+    "link": "https://logeion.uchicago.edu/",
+    "tags": ["Dicionário", "Latim", "Referência", "Acadêmico"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Whitaker's Words",
+    "introdução": "Ferramenta de análise morfológica e dicionário de latim.",
+    "descrição": "Uma ferramenta extremamente rápida e prática para tradutores e estudantes de latim. Ao inserir uma palavra em latim, o Whitaker's Words fornece todas as suas possíveis traduções e formas gramaticais (declinação, conjugação, etc.). É excelente para análises rápidas e precisas.",
+    "link": "http://archives.nd.edu/words.html",
+    "tags": ["Dicionário", "Latim", "Gramática"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Jisho.org",
+    "introdução": "Um poderoso e rápido dicionário online de japonês-inglês.",
+    "descrição": "Jisho é uma ferramenta fundamental para tradutores e estudantes de japonês. Ele permite buscar palavras em japonês (usando kanji, kana ou romaji) e em inglês, fornecendo definições, frases de exemplo, informações detalhadas sobre kanji (como ordem dos traços e radicais) e muito mais.",
+    "link": "https://jisho.org/",
+    "tags": ["Dicionário", "Japonês", "Referência"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Weblio Eiwa-Waei Jiten",
+    "introdução": "Um dos maiores dicionários online e banco de dados de exemplos do Japão.",
+    "descrição": "Weblio oferece um vasto acervo de dicionários bilíngues (inglês-japonês) e monolíngues. Sua principal força é a enorme quantidade de frases de exemplo extraídas de diversas fontes, o que o torna excelente para verificar o uso de palavras e expressões em contextos reais.",
+    "link": "https://ejje.weblio.jp/",
+    "tags": ["Dicionário", "Japonês", "Referência", "Base de Dados"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Neutro Latino",
+    "introdução": "Glossário de termos neutros para espanhol e inglês.",
+    "descrição": "Neutrolatino.com é um glossário de termos neutros sugeridos e seus sinônimos nos diferentes países da América Latina e Espanha. O site permite a busca tanto de vocábulos em espanhol quanto de seu equivalente em inglês.",
+    "link": "https://www.neutrolatino.com/",
+    "tags": ["Dicionário", "Idiomas", "Referência", "Neutros", "Inglês", "Espanhol"],
+    "preco": "Gratuito"
+  },
+   {
+    "nome": "Lose The Very",
+    "introdução": "Uma ferramenta para encontrar alternativas à palavra 'very' em inglês.",
+    "descrição": "Este site oferece uma lista de sinônimos e alternativas para a palavra 'very' em inglês, ajudando a enriquecer o vocabulário, evitar repetições e tornar a escrita mais forte e precisa.",
+    "link": "https://www.losethevery.com/",
+    "tags": ["Idiomas", "Inglês", "Referência"],
+    "preco": "Gratuito"
+  },
+   {
+    "nome": "Jergas hispanas",
+    "introdução": "Permite a busca de diferentes expressões hispânicas e seus significados.",
+    "descrição": "Esse buscador e dicionário permite 4 tipos de buscas: por palavra ou frase exata, por palavra-chave, buscando em definições ou explorando o vocabulário de um país.",
+    "link": "https://www.jergasdehablahispana.org/",
+    "tags": ["Dicionário", "Idiomas", "Referência", "Espanhol"],
+    "preco": "Gratuito"
+  },
+   {
+    "nome": "Coloquialmente - Glosario español de andar por casa",
+    "introdução": "É um glossário de espanhol coloquial da Espanha atual.",
+    "descrição": "Cada palavra ou expressão é explicada brevemente e vem acompanhada dos exemplos necessários para o seu entendimento. Quando necessário, se indica o contexto social ou cultural que as rodeia.",
+    "link": "https://coloquialmente.com/es",
+    "tags": ["Dicionário", "Idiomas", "Referência", "Espanhol"],
+    "preco": "Gratuito"
+  },
+ {
+    "nome": "Rev.com",
+    "introdução": "Plataforma de transcrição automática e legendagem.",
+    "descrição": "Rev é uma plataforma líder em precisão de transcrição para o setor jurídico, garantindo segurança na revisão de materiais por advogados e investigadores. A empresa afirma nunca utilizar dados de terceiros para treinar seus modelos de IA.",
+    "link": "https://www.rev.com/",
+    "tags": ["Transcrição Automática", "IA", "Inglês"],
+    "preco": "Pago"
+  },
+  {
+    "nome": "Refranero Instituto Cervantes",
+    "introdução": "Refranero multilingue do Instituto Cervantes.",
+    "descrição": "Uma base de dados que coleta provérbios e expressões idiomáticas em espanhol e suas correspondências em diversas outras línguas. Permite buscar por palavras-chave e encontrar sinônimos, antônimos e variantes.",
+    "link": "https://cvc.cervantes.es/lengua/refranero/Busqueda.aspx",
+    "tags": ["Espanhol", "Referência", "Idiomas", "Inglês", "Francês", "Galego", "Italiano", "Grego", "Alemão", "Português", "Vasco", "Catalão", "Latim", "Russo", "Romano", "Árabe", "Polaco", "Húngaro", "Albanês", "Persa", "Chinês", "Croata", "Armênio", "Eslovênio", "Sérvio", "Georgiano"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Garzanti Linguistica",
+    "introdução": "Dicionário de referência da língua italiana.",
+    "descrição": "Um dos principais dicionários da Itália, o Garzanti oferece definições detalhadas, sinônimos, antônimos e uma vasta coleção de exemplos. É uma ferramenta essencial para tradutores que buscam precisão e riqueza vocabular no italiano.",
+    "link": "https://www.garzantilinguistica.it/",
+    "tags": ["Dicionário", "Italiano", "Referência"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Dizionario di Italiano del Corriere della Sera",
+    "introdução": "Dicionário de italiano com sinônimos e antônimos.",
+    "descrição": "Oferecido pelo famoso jornal italiano 'Corriere della Sera', este dicionário é uma ferramenta prática e confiável. Além das definições, inclui seções de sinônimos e antônimos, conjugador de verbos e guias de gramática, sendo muito útil para o trabalho diário de tradução.",
+    "link": "https://dizionari.corriere.it/dizionario_italiano/",
+    "tags": ["Dicionário", "Italiano", "Gramática", "Referência"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Accademia della Crusca",
+    "introdução": "A instituição de referência para a língua italiana.",
+    "descrição": "Para dúvidas complexas sobre gramática, etimologia ou uso correto de termos, o site da Accademia della Crusca é a fonte mais autoritária. Oferece um serviço de consultoria linguística onde especialistas respondem a perguntas de usuários, criando um acervo valioso para tradutores e pesquisadores.",
+    "link": "https://accademiadellacrusca.it/",
+    "tags": ["Italiano", "Referência", "Acadêmico", "Gramática"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Almaany (معاجم المعاني)",
+    "introdução": "Um dos dicionários online mais completos para a língua árabe.",
+    "descrição": "O Almaany é uma ferramenta indispensável que oferece um conjunto de dicionários bilíngues (árabe-inglês, árabe-francês, etc.) e monolíngues. Ele fornece definições detalhadas, sinônimos, antônimos e uma vasta coleção de frases de exemplo, sendo essencial para encontrar o termo exato em diferentes contextos.",
+    "link": "https://www.almaany.com/",
+    "tags": ["Dicionário", "Árabe", "Referência", "Base de Dados"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Hans Wehr Dictionary of Modern Written Arabic",
+    "introdução": "O dicionário de referência para o árabe escrito moderno.",
+    "descrição": "A versão online do famoso dicionário de Hans Wehr é uma ferramenta acadêmica fundamental para tradutores. Organizado pela raiz triliteral das palavras, ele é extremamente poderoso para encontrar o significado preciso de termos e suas derivações no árabe padrão moderno.",
+    "link": "https://giftsofknowledge.net/hanswehr/",
+    "tags": ["Dicionário", "Árabe", "Referência", "Acadêmico"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Aratools",
+    "introdução": "Conjunto de ferramentas online para processamento de texto em árabe.",
+    "descrição": "O Aratools oferece uma coleção de utilitários muito práticos para quem trabalha com textos em árabe. Inclui funcionalidades como remover diacríticos (tashkeel), converter números para texto, verificar a frequência de letras e outras manipulações de texto que agilizam o trabalho de edição e revisão.",
+    "link": "https://www.aratools.com/",
+    "tags": ["Kit de Ferramentas", "Árabe", "QA"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Duden",
+    "introdução": "O dicionário de referência da língua alemã.",
+    "descrição": "O Duden é a fonte mais autoritária para a ortografia, gramática e significado das palavras em alemão. É o equivalente ao 'Aurélio' para o português, sendo uma ferramenta indispensável para garantir a correção e a precisão em qualquer tradução para o alemão.",
+    "link": "https://www.duden.de/",
+    "tags": ["Dicionário", "Alemão", "Referência", "Gramática"],
+    "preco": "Freemium"
+  },
+  {
+    "nome": "LEO Wörterbuch",
+    "introdução": "Um dos dicionários online mais populares para pares de idiomas com alemão.",
+    "descrição": "O LEO é um dicionário colaborativo extremamente rápido e abrangente, oferecendo traduções, tabelas de conjugação e declinação, e fóruns de discussão onde tradutores e entusiastas resolvem dúvidas complexas. É uma ferramenta essencial para o dia a dia.",
+    "link": "https://dict.leo.org/",
+    "tags": ["Dicionário", "Alemão", "Referência", "Comunidade"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "Wortschatz-Portal (Universität Leipzig)",
+    "introdução": "Corpus linguístico e base de dados lexical da Universidade de Leipzig.",
+    "descrição": "Esta ferramenta acadêmica permite analisar a frequência de uso de uma palavra, ver seus sinônimos, exemplos de uso em contextos reais extraídos de milhões de textos e visualizar graficamente suas coocorrências (palavras que aparecem frequentemente juntas). É excelente para pesquisa terminológica avançada.",
+    "link": "https://www.wortschatz.uni-leipzig.de/",
+    "tags": ["Alemão", "Referência", "Acadêmico", "Base de Dados", "Corpus"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "MDBG",
+    "introdução": "Dicionário de chinês-inglês online e gratuito.",
+    "descrição": "O MDBG é um dicionário chinês-inglês clássico e muito respeitado. Ele é baseado no projeto CC-CEDICT e oferece definições claras, pinyin, exemplos de uso e a possibilidade de praticar a escrita dos caracteres. É uma ferramenta rápida e confiável para consultas diretas.",
+    "link": "https://www.mdbg.net/chinese/dictionary",
+    "tags": ["Dicionário", "Chinês", "Referência"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "YellowBridge",
+    "introdução": "Dicionário e ferramenta de aprendizado de chinês.",
+    "descrição": "O YellowBridge é um recurso completo que vai além de um simples dicionário. Ele oferece análise detalhada de caracteres, mostrando seus componentes, etimologia e palavras relacionadas. Também possui um tradutor de texto, flashcards e artigos sobre a cultura chinesa, sendo uma excelente ferramenta de referência.",
+    "link": "https://www.yellowbridge.com/",
+    "tags": ["Dicionário", "Chinês", "Referência", "Acadêmico"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "LINE Dict",
+    "introdução": "Dicionário chinês-inglês com foco em exemplos práticos.",
+    "descrição": "Anteriormente conhecido como nciku, o LINE Dict é um dicionário online que se destaca pela grande quantidade de frases de exemplo e diálogos. Ele ajuda a entender como as palavras são usadas em contextos reais, além de fornecer análise de caracteres e listas de vocabulário.",
+    "link": "https://dict.line.me/linedict/home",
+    "tags": ["Dicionário", "Chinês", "Referência", "Base de Dados"],
+    "preco": "Gratuito"
+  },
+  {
+    "nome": "CC-CEDICT",
+    "introdução": "Projeto de dicionário chinês-inglês de código aberto.",
+    "descrição": "O CC-CEDICT é um projeto colaborativo que serve como base para muitos outros dicionários de chinês, incluindo o Pleco e o MDBG. [4] É um arquivo de texto que pode ser baixado e usado offline em diferentes softwares. Embora não seja uma 'ferramenta' com interface própria, é o coração de muitos recursos gratuitos e uma fonte de dados valiosa para tradutores que desejam criar suas próprias soluções de terminologia.",
+    "link": "https://www.mdbg.net/chinese/dictionary?page=cedict",
+    "tags": ["Dicionário", "Chinês", "Base de Dados"],
+    "preco": "Gratuito"
+  }
+]

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Conhecimento de Ferramentas</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1a111d; /* Fundo escuro com tom magenta */
+            color: #f8f9fa; /* Texto principal quase branco para alto contraste */
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #e64980; /* Magenta vibrante para o título */
+        }
+        #search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #search-input {
+            width: 60%;
+            max-width: 600px;
+            padding: 12px 15px;
+            font-size: 16px;
+            border: 1px solid #5c2e5c; /* Borda magenta escura */
+            border-radius: 8px;
+            background-color: #2c1d33; /* Fundo do input com tom magenta */
+            color: #f8f9fa;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        #search-input:focus {
+            outline: none;
+            border-color: #e64980; /* Magenta vibrante no foco */
+            box-shadow: 0 0 0 3px rgba(230, 73, 128, 0.25);
+        }
+        #price-filter-container {
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 10px 0;
+        }
+        #tags-container {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 10px;
+            background-color: #2c1d33; /* Fundo do container de tags */
+            border-radius: 8px;
+            border: 1px solid #5c2e5c;
+        }
+        .filter-btn {
+            background-color: #4d2b4d; /* Fundo do botão de tag */
+            color: #f0d9e5; /* Texto do botão de tag com tom magenta claro */
+            border: 1px solid #5c2e5c;
+            border-radius: 15px;
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s ease-in-out;
+        }
+        .filter-btn:hover {
+            background-color: #5c2e5c;
+        }
+        .filter-btn.active {
+            background-color: #e64980; /* Magenta vibrante para tag ativa */
+            color: white;
+            border-color: #e64980;
+            transform: scale(1.05);
+        }
+        #cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #2c1d33; /* Fundo dos cards */
+            border: 1px solid #5c2e5c; /* Borda dos cards */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+            position: relative; /* Necessário para o posicionamento do preço */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .card h3 a {
+            color: #e64980; /* Cor do link do título em magenta */
+            text-decoration: none;
+        }
+        .card h3 a:hover {
+            text-decoration: underline;
+        }
+        .card .intro {
+            font-weight: bold;
+            color: #f0d9e5; /* Cor da introdução com tom magenta claro */
+            margin-bottom: 10px;
+        }
+        .card .description {
+            flex-grow: 1;
+            margin-bottom: 15px;
+            color: #ced4da; /* Cinza claro para descrição, bom contraste */
+        }
+        .card .price-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .price-tag.Gratuito {
+            background-color: #28a745; /* Verde */
+            color: white;
+        }
+        .price-tag.Freemium, .price-btn[data-price="Freemium"] {
+            background-color: #ffc107; /* Amarelo */
+            color: #333;
+        }
+        .price-tag.Pago, .price-btn[data-price="Pago"] {
+            background-color: #dc3545; /* Vermelho */
+            color: white;
+        }
+        .price-btn {
+            font-weight: bold;
+        }
+        .price-btn[data-price="Gratuito"] {
+            background-color: #28a745;
+            color: white;
+        }
+        .price-btn.active {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .card .card-tags .card-tag-item {
+            background-color: #4d2b4d; /* Fundo das tags nos cards */
+            color: #ced4da; /* Texto das tags */
+            border-radius: 5px;
+            padding: 4px 8px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .card .card-tags .card-tag-item:hover {
+            background-color: #5c2e5c;
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Base de Conhecimento de Ferramentas</h1>
+
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Buscar por nome ou descrição...">
+    </div>
+
+    <div id="price-filter-container">
+        <button class="filter-btn price-btn active" data-price="Todos">Todos</button>
+        <button class="filter-btn price-btn" data-price="Gratuito">Gratuito</button>
+        <button class="filter-btn price-btn" data-price="Freemium">Freemium</button>
+        <button class="filter-btn price-btn" data-price="Pago">Pago</button>
+    </div>
+
+    <div id="tags-container">
+        <!-- As tags serão inseridas aqui pelo JavaScript -->
+    </div>
+
+    <div id="cards-container">
+        <!-- Os cards das ferramentas serão inseridos aqui pelo JavaScript -->
+    </div>
+
+    <script>
+        // Elementos do DOM
+        const cardsContainer = document.getElementById('cards-container');
+        const tagsContainer = document.getElementById('tags-container');
+        const priceContainer = document.getElementById('price-filter-container');
+        const searchInput = document.getElementById('search-input');
+
+        let allTools = []; // Armazena todas as ferramentas carregadas do JSON
+
+        // Função para aplicar os filtros de tag e busca
+        function applyFilters() {
+            const activePriceBtn = document.querySelector('.price-btn.active');
+            const selectedPrice = activePriceBtn ? activePriceBtn.dataset.price : 'Todos';
+
+            const activeTagBtn = document.querySelector('.tag-btn.active');
+            const selectedTag = activeTagBtn ? activeTagBtn.innerText : 'Mostrar Todos';
+            
+            const searchTerm = searchInput.value.toLowerCase();
+
+            let filteredTools = allTools;
+
+            // 1. Filtra por preço
+            if (selectedPrice !== 'Todos') {
+                filteredTools = filteredTools.filter(tool => tool.preco === selectedPrice);
+            }
+
+            // 2. Filtra por tag
+            if (selectedTag !== 'Mostrar Todos') {
+                filteredTools = filteredTools.filter(tool => tool.tags.includes(selectedTag));
+            }
+
+            // 3. Filtra pelo termo de busca
+            if (searchTerm) {
+                filteredTools = filteredTools.filter(tool => 
+                    tool.nome.toLowerCase().includes(searchTerm) || 
+                    tool.descrição.toLowerCase().includes(searchTerm)
+                );
+            }
+            
+            displayCards(filteredTools);
+        }
+
+        // Função para renderizar os cards na tela
+        function displayCards(tools) {
+            cardsContainer.innerHTML = ''; // Limpa os cards existentes
+            tools.forEach(tool => {
+                const cardTags = tool.tags.map(tag => `<span class="card-tag-item">${tag}</span>`).join('');
+                const cardElement = document.createElement('div');
+                cardElement.classList.add('card');
+                cardElement.innerHTML = `
+                    <span class="price-tag ${tool.preco}">${tool.preco}</span>
+                    <h3><a href="${tool.link}" target="_blank" rel="noopener noreferrer">${tool.nome}</a></h3>
+                    <p class="intro">${tool.introdução}</p>
+                    <p class="description">${tool.descrição}</p>
+                    <div class="card-tags">${cardTags}</div>
+                `;
+                cardsContainer.appendChild(cardElement);
+            });
+        }
+
+        // Função principal que carrega os dados e inicializa a página
+        async function initialize() {
+            try {
+                const response = await fetch('data.json');
+                allTools = await response.json();
+                const tools = allTools; // Para uso inicial
+
+                // Extrai todas as tags únicas e as ordena
+                const allTags = new Set(tools.flatMap(tool => tool.tags));
+                const sortedTags = [...allTags].sort((a, b) => a.localeCompare(b));
+
+                // Cria e adiciona o botão "Mostrar Todos"
+                tagsContainer.innerHTML = '<button class="filter-btn tag-btn active">Mostrar Todos</button>';
+                
+                // Cria os botões para cada tag
+                sortedTags.forEach(tag => {
+                    tagsContainer.innerHTML += `<button class="filter-btn tag-btn">${tag}</button>`;
+                });
+
+                // Adiciona o listener de eventos ao container de preços
+                priceContainer.addEventListener('click', (event) => {
+                    if (event.target.classList.contains('price-btn')) {
+                        document.querySelectorAll('.price-btn').forEach(btn => btn.classList.remove('active'));
+                        event.target.classList.add('active');
+                        applyFilters();
+                    }
+                });
+
+                // Adiciona o listener de eventos ao container das tags
+                tagsContainer.addEventListener('click', (event) => {
+                    if (event.target.classList.contains('tag-btn')) {
+                        // Atualiza a classe 'active' nos botões
+                        document.querySelectorAll('.tag-btn').forEach(btn => btn.classList.remove('active'));
+                        event.target.classList.add('active');
+                        
+                        applyFilters();
+                    }
+                });
+
+                // Adiciona o listener de eventos ao container dos cards para tags clicáveis
+                cardsContainer.addEventListener('click', (event) => {
+                    if (event.target.classList.contains('card-tag-item')) {
+                        const clickedTag = event.target.innerText;
+                        const tagButton = Array.from(document.querySelectorAll('.filter-btn.tag-btn')).find(btn => btn.innerText === clickedTag);
+
+                        if (tagButton) {
+                            // Limpa a busca e ativa o botão de tag correspondente
+                            searchInput.value = '';
+                            document.querySelectorAll('.tag-btn').forEach(btn => btn.classList.remove('active'));
+                            tagButton.classList.add('active');
+                            
+                            applyFilters();
+                        }
+                    }
+                });
+
+                // Adiciona o listener de eventos para o campo de busca
+                searchInput.addEventListener('input', applyFilters);
+
+                // Exibe todos os cards inicialmente
+                applyFilters();
+
+            } catch (error) {
+                cardsContainer.innerHTML = '<p>Erro ao carregar os dados. Verifique o arquivo data.json e tente novamente.</p>';
+                console.error('Erro:', error);
+            }
+        }
+
+        // Inicia a aplicação
+        initialize();
+    </script>
+
+</body>
+</html>
